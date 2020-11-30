@@ -1,0 +1,73 @@
+*,
+*::after,
+*::before {
+margin: 0;
+padding: 0;
+box-sizing: border-box;
+}
+
+:root{
+   
+}
+
+html, body{
+    width: 100%;
+       
+}
+/* CONTAINER LAYOUT----------------------------------------------- */
+
+.container-chat{
+  display: flex;
+  height: auto;
+}
+
+/* SECTIONS ------------------------------------------------ */
+
+nav{
+   display: flex;
+   justify-content: center;
+   background-color: darkslategrey;
+}
+
+.chatroom{
+    width: 75%;
+    background-color:lightgrey;  
+    
+    height: 100%;
+} 
+.msg-display{
+    grid-area: 'msg';
+    height: 100%;
+    overflow: scroll;
+    
+}
+.msg-display:nth-of-type(odd){
+    background-color: lightsalmon;
+}
+.display-nickname{
+    border-bottom: 1px solid white;
+}
+.form-input{
+
+ padding: 1rem;
+}
+
+.form-input input{
+    width: 25% ;
+}
+
+.sidebar{
+    width: 25%;
+    grid-area: "sidebar";
+    background-color: lightcoral;
+    overflow: scroll;    
+}
+
+
+/* MESSAGE HOLDER ITEM----------------------------- */
+
+
+
+
+
+   
